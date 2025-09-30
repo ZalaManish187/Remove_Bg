@@ -1,0 +1,43 @@
+*{
+   font-family: 'poppins',sans-serif;
+   font-weight: 700;
+}
+.navLogo{
+    width:250px;
+}
+.headerImgVideo{
+    width:400px;
+}
+.headerH1{
+    font-size: 65px;
+}
+.policyText{
+    font-size: 15px;
+}
+.card{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    padding:100px;
+}
+.card-img{
+    height:40px;
+}
+.bgText{
+    background-image: url("deco-brush.svg");
+    width:50px;
+    background-size: cover;
+    background-clip: border-box;
+}
+.firstContainer{
+    margin-top: 100px;
+}
+.titleTextH1{
+    font-size: 45px;
+}
+#third{
+    display: flex;
+    gap:100px;
+}
