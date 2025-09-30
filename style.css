@@ -1,26 +1,47 @@
 *{
    font-family: 'poppins',sans-serif;
    font-weight: 700;
+   scrollbar-width: none;
 }
 .navLogo{
     width:250px;
 }
+.header{
+    margin-top: 180px;
+}
 .headerImgVideo{
     width:400px;
+}
+#headerCard{
+    border-radius: 30px;
+    border:0;
+    outline:0;
+    height:300px;
+    width:450px;
+}
+#imagesCard{
+    width:64px;
+    height:64px;
+}
+#upload{
+    border-radius: 50px;
+    font-size: 25px;
 }
 .headerH1{
     font-size: 65px;
 }
 .policyText{
-    font-size: 15px;
+    font-size: 14px;
 }
 .card{
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-                -0.5px -0.5px 0px rgba(255,255,255,1),
-                0.5px 0.5px 0px rgba(0,0,0,0.15),
-                0px 12px 10px -10px rgba(0,0,0,0.05);
+    
     padding:100px;
+}
+#card{
+    width:350px;
+    height:450px;
+    background-color: white;
+    border-radius: 20px;
 }
 .card-img{
     height:40px;
@@ -39,5 +60,68 @@
 }
 #third{
     display: flex;
-    gap:100px;
+    gap:150px;
+}
+.thirdTextP{
+    font-size: 30px;
+}
+.fourthText{
+    font-weight: 700;
+    font-size: 45px;
+}
+#cardContainer{
+    width:300px;
+    height:110px;
+}
+.fourthContainer{
+    margin-top: 100px;
+}
+.fifthContainer{
+    margin-top: 50px;
+}
+.sixthContainer{
+    padding:150px;
+}
+.bgContainer{
+    background-image: url("pattern-rbg.svg");
+    background-repeat: no-repeat;
+    width:100%;
+    padding:50px;
+    margin-top: 100px;
+}
+#bgImg{
+    width:280px;
+}
+#cardDetails{
+    width:350px;
+    height:120px;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#input-group{
+    width:100%;
+}
+
+.thirthteenContainer ul li a {
+  text-decoration: none;
+  color: #555; 
+  font-size: 15px;
+}
+
+.thirthteenContainer ul li a:hover {
+  color: #000;
+}
+
+.thirthteenContainer h5 {
+  font-size: 16px;
+  color: #222;
+}
+.thirthteenContainer{
+    margin-top: 100px;
+}
+
+#links{
+    display: flex;
+    gap:200px;
 }

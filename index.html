@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm  p-3 mb-5 bg-body rounded">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm  p-3 mb-5 bg-body rounded fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="logo.jpg" alt="" srcset="" class="navLogo">
@@ -47,12 +49,12 @@
     </div>
   </nav>
 
-  <div class="header container mt-5">
+  <div class="header container d-flex justify-content-center align-items-center">
     <div class="videoContainer">
       <div class="row">
         <div class="col">
-         <video src="manuel_compressed.mp4" autoplay loop muted playsinline class="headerImgVideo">
-</video>
+          <video src="manuel_compressed.mp4" autoplay loop muted playsinline class="headerImgVideo">
+          </video>
 
           <div class="headerText">
             <h1 class="headerH1 fw-bold">Remove Image<br> Background</h1>
@@ -60,32 +62,33 @@
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 25rem;">
-  
- 
-  <button type="button" class="btn btn-primary">Upload Image</button>
-  <div class="text-center mt-2">
-  <p class="fw-normal">or drop a file,</p>
-  <p class="fw-normal">paste image or URL ​</p>
-  </div>
-  
-</div>
+          <div class="card shadow-sm  mb-5 shadow-lg mb-5 bg-body rounded"  id="headerCard">
 
-<div class="tryThisImg mt-3">
-  <div class="d-flex align-items-center gap-5">
-  <p class="text-nowrap fw-normal">No image? <br>
-Try one of these:</p>
-<div class="images d-flex align-items-center gap-2">
-  <img src="1.jpg" class="card-img" alt="...">
-   <img src="2.jpg" class="card-img" alt="...">
-    <img src="3.jpg" class="card-img" alt="...">
-     <img src="4.jpg" class="card-img" alt="...">
-     </div>
-</div>
-<div class="privacy-policy">
-  <span class="fw-normal policyText">By uploading an image or URL you agree to our Terms of Service. To learn more about how remove.bg handles your personal data, check our Privacy Policy.</span>
-</div>
-</div>
+
+            <button type="button" class="btn btn-primary" id="upload">Upload Image</button>
+            <div class="text-center mt-2">
+              <p class="fw-light">or drop a file,</p>
+              <p class="fw-light">paste image or <span class="border-bottom">URL</span>​</p>
+            </div>
+
+          </div>
+
+          <div class="tryThisImg mt-3">
+            <div class="d-flex align-items-center gap-5">
+              <p class="text-nowrap fw-normal">No image? <br>
+                Try one of these:</p>
+              <div class="images d-flex align-items-center gap-2">
+                <img src="1.jpg" class="card-img" id="imagesCard" alt="...">
+                <img src="2.jpg" class="card-img" id="imagesCard" alt="...">
+                <img src="3.jpg" class="card-img" id="imagesCard" alt="...">
+                <img src="4.jpg" class="card-img" id="imagesCard" alt="...">
+              </div>
+            </div>
+            <div class="privacy-policy mt-3">
+              <span class="fw-light policyText">By uploading an image or URL you agree to our <span class="border-bottom">Terms of Service</span>. To
+                learn more about how remove.bg handles your personal data, check our  <span class="border-bottom">Privacy Policy.</span></span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -94,30 +97,32 @@ Try one of these:</p>
   <div class="firstContainer d-flex justify-content-center align-items-center container">
     <div class="row">
       <div class="col">
-         <div class="titleText d-flex justify-content-center align-items-center">
-      <h1 class="fw-bold titleTextH1">Stunning quality</h1>
-    </div>
-    <div class="titleBtn d-flex justify-content-center align-items-center gap-5 mt-5">
-      <button type="button" class="btn btn-light">Products</button>
-      <button type="button" class="btn btn-light">People</button>
-      <button type="button" class="btn btn-light">Animals</button>
-      <button type="button" class="btn btn-light">Cars</button>
-      <button type="button" class="btn btn-light">Graphics</button>
-    </div>
+        <div class="titleText d-flex justify-content-center align-items-center">
+          <h1 class="fw-bold titleTextH1">Stunning quality</h1>
+        </div>
+        <div class="titleBtn d-flex justify-content-center align-items-center gap-5 mt-5">
+          <button type="button" class="btn btn-light">Products</button>
+          <button type="button" class="btn btn-light">People</button>
+          <button type="button" class="btn btn-light">Animals</button>
+          <button type="button" class="btn btn-light">Cars</button>
+          <button type="button" class="btn btn-light">Graphics</button>
+        </div>
       </div>
     </div>
-   
+
   </div>
   <div class="secondContainer d-flex justify-content-center align-items-center mt-5">
     <img src="example.png" alt="" srcset="">
   </div>
   <div class="thirdContainer d-flex justify-content-center align-items-center mt-5 container">
-    <div class="row" id="third">
+    <div class="row d-flex align-items-center" id="third">
       <div class="col">
         <div class="text">
-          <p>Background remover: Fully <br>automated in 5 seconds <br>with 1 click</p>
-          <p>Thanks to remove.bg's clever AI, you can slash editing time<br> - and have more fun!</p>
-          <p>No matter if you want to make a background transparent <br>(PNG), add a white background to a photo, extract or<br> isolate the subject, or get the cutout of a photo - you can<br> do all this and more with remove.bg, the AI background <br> remover for professionals.</p>
+          <p class="fw-bold thirdTextP">Background remover: Fully <br>automated in 5 seconds <br>with 1 click</p>
+          <p class="fw-light">Thanks to remove.bg's clever AI, you can slash editing time - and have more fun!</p>
+          <p class="fw-lighter">No matter if you want to make a background transparent <br>(PNG), add a white background
+            to a photo, extract or<br> isolate the subject, or get the cutout of a photo - you can<br> do all this and
+            more with remove.bg, the AI background <br> remover for professionals.</p>
         </div>
       </div>
       <div class="col">
@@ -125,6 +130,441 @@ Try one of these:</p>
       </div>
     </div>
   </div>
+  <div class="fourthContainer d-flex justify-content-center align-items-center">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="fourthText">Ramp up the creativity - and efficiency!</h1>
+        <p class="fw-light mt-4">Whether you want to make a mind-blowing greetings card for your bestie or to power through <br>
+          thousands of car photos in next to no time, remove.bg makes it happen.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="fifthContainer d-flex justify-content-center align-items-center container">
+    <div class="container my-5">
+  <div class="row g-3">
+
+   
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+           <i class="fa-solid fa-wand-magic-sparkles fs-3 mb-2"></i>
+          <h6 class="fw-bold mt-2">Magic Brush <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+          <i class="fa-solid fa-heart-pulse fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Individuals <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+         <i class="fa-solid fa-camera fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Photographers <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+          <i class="fa-solid fa-comment fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Marketing <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+         <i class="fa-solid fa-code fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Developers <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+         <i class="fa-solid fa-cart-shopping fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Ecommerce <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+         <i class="fa-solid fa-tv fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Media <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+         <i class="fa-solid fa-car fs-3 mb-2"></i>
+          <h6 class="fw-bold">for Car Dealerships <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-12 col-sm-6 col-lg-4">
+      <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
+        <div class="card-body">
+         <i class="fa-solid fa-table fs-3 mb-2"></i>
+
+          <h6 class="fw-bold">for Enterprise <i class="fa-solid fa-arrow-right"></i></h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+  </div>
+  <!-- <div class="fifthContainer d-flex justify-content-center align-items-center mt-5 container">
+    <div class="row">
+      <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+ <i class="fa-solid fa-wand-magic-sparkles"></i>
+  <div class="card-body d-flex align-items-center gap-3 mb-5">
+    
+    <p class="card-text">Magic Brush</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+ <i class="fa-solid fa-heart-pulse"></i>
+  <div class="card-body d-flex align-items-center gap-3">
+    <p class="card-text">for Individuals</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+  <i class="fa-regular fa-camera"></i>
+  <div class="card-body d-flex justify-content-center align-items-center gap-3">
+    <p class="card-text">for Photographers</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="row">
+      <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+ <i class="fa-solid fa-wand-magic-sparkles"></i>
+  <div class="card-body d-flex align-items-center gap-3 mb-5">
+    
+    <p class="card-text">for Marketing</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+ <i class="fa-solid fa-heart-pulse"></i>
+  <div class="card-body d-flex align-items-center gap-3">
+    <p class="card-text">for Developers</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+  <i class="fa-regular fa-camera"></i>
+  <div class="card-body d-flex justify-content-center align-items-center gap-3">
+    <p class="card-text">for Ecommerce</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+<div class="row">
+      <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+ <i class="fa-solid fa-wand-magic-sparkles"></i>
+  <div class="card-body d-flex align-items-center gap-3 mb-5">
+    
+    <p class="card-text">for Media</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+ <i class="fa-solid fa-heart-pulse"></i>
+  <div class="card-body d-flex align-items-center gap-3">
+    <p class="card-text">for Car Dealerships</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ <div class="col">
+      <div class="card shadow-sm p-3 mb-5 bg-body rounded" id="cardContainer">
+  <i class="fa-regular fa-camera"></i>
+  <div class="card-body d-flex justify-content-center align-items-center gap-3">
+    <p class="card-text">for Enterprise</p>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+</div>
+ 
+  </div>
+   -->
+  <div class="sixthContainer">
+    <div class="row">
+      <div class="col">
+        <img src="developers-4.png" width="450" alt="" srcset="">
+      </div>
+      <div class="col">
+        <h1 class="fw-bold">Integrates with your <br> software workflow</h1>
+        <p class="fw-light">If you're wondering how to automate background removal,<br> look no further. We've built
+          tools and plugins for some of <br>the most popular design programs, eCommerce sites, and<br> computer
+          environments. Use our API to bring more digital<br> efficiency to your workflow!</p>
+        <div class="align-items-cente">
+          <h5 class="fw-lighter text-primary">All plugins & integrations <i class="fa-solid fa-arrow-right"></i></h4>
+            <h5 class="fw-lighter text-primary">API documentation <i class="fa-solid fa-arrow-right"></i></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bgContainer">
+    <div class="seventhContainer d-flex justify-content-center align-items-center container flex-column">
+      <div class="row d-flex justify-content-center align-items-center mt-5">
+        <div class="col">
+          <div class="textTitle">
+            <h1>They love us. You will too.</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center container mt-4">
+        <div class="col">
+          <div class="shadow p-3 mb-5 bg-body rounded p-5" id="card">
+            <div class="cardImg">
+              <img src="sony_logo.jpg" width="200" alt="" srcset="">
+            </div>
+            <div class="cardText mt-3">
+              <p class="fw-bold fs-5">“We are impressed by the AI and think it's the best choice on the market.”</p>
+            </div>
+            <div class="cardLogo mt-5">
+              <img src="sonymusic_author.jpg" width="100" alt="" srcset="">
+              <p class="fw-light">Emil Barsø Rheinlænder</p>
+              <p class="fw-light">Content & Marketing Coordinator</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="shadow p-3 mb-5 bg-body rounded p-5" id="card">
+            <div class="cardImg">
+              <img src="phoenix-logo.png" width="150" alt="" srcset="">
+            </div>
+            <div class="cardText mt-3">
+              <p class="fw-bold fs-5">“We are impressed by the AI and think it's the best choice on the market.”</p>
+            </div>
+            <div class="cardLogo mt-5">
+              <img src="phoenix_author.jpg" width="100" alt="" srcset="">
+              <p class="fw-light">Marc Cohen</p>
+              <p class="fw-light">CEO</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col">
+          <div class="shadow p-3 mb-5 bg-body rounded p-5" id="card">
+            <div class="cardImg">
+              <img src="techcrunch-logo.svg" width="200" alt="" srcset="">
+            </div>
+            <div class="cardText mt-3">
+              <p class="fw-bold fs-5">“We are impressed by the AI and think it's the best choice on the market.”</p>
+            </div>
+            <div class="cardLogo mt-5">
+              <img src="techcrunch_author.jpg" width="100" alt="" srcset="">
+              <p class="fw-light">Taylor Hatmaker</p>
+              <p class="fw-light">Senior Technology Editor</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="text d-flex justify-content-center align-items-center">
+      <p>Read Success Stories <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+  </div>
+  <div class="eightContainer d-flex justify-content-center align-items-center container mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="titleText d-flex justify-content-center align-items-center">
+          <h1 class="fw-bold titleTextH1">Stunning quality</h1>
+        </div>
+        <div class="titleBtn d-flex justify-content-center align-items-center gap-5 mt-4">
+          <button type="button" class="btn btn-light">Products</button>
+          <button type="button" class="btn btn-light">People</button>
+          <button type="button" class="btn btn-light">Animals</button>
+          <button type="button" class="btn btn-light">Cars</button>
+          <button type="button" class="btn btn-light">Graphics</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="nightContainer d-flex justify-content-center align-items-center container mt-5">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col">
+        <img src="original.png" id="bgImg" alt="" srcset="">
+        <p class="fw-light text-center mt-2">Original</p>
+      </div>
+      <div class="col">
+        <img src="transparent_background.png" id="bgImg" alt="" srcset="">
+        <p class="fw-light text-center mt-2">Transparent background</p>
+      </div>
+      <div class="col">
+        <img src="new_background.png" id="bgImg" alt="" srcset="">
+        <p class="fw-light text-center mt-2"> New background </p>
+      </div>
+      <div class="col">
+        <img src="endless_possibilities.png" id="bgImg" alt="" srcset="">
+        <p class="fw-light text-center mt-2">Endless possibilities</p>
+      </div>
+    </div>
+  </div>
+  <div class="bgContainer">
+    <div class="elevenContainer d-flex justify-content-center align-items-center container flex-column mt-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col">
+          <div class="cards" id="cardDetails">
+           <div class="card-body">
+              <h5>Sep 17,2025</h5>
+              <p>Why AI-generated backgrounds are the future of product photography</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="cards" id="cardDetails">
+            <div class="card-body">
+              <h5>Sep 17,2025</h5>
+              <p>Why AI-generated backgrounds are the future of product photography</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="cards" id="cardDetails">
+            <div class="card-body">
+              <h5>Sep 17,2025</h5>
+              <p>Why AI-generated backgrounds are the future of product photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <div class="twelveContainer container d-flex justify-content-center align-items-center mt-5">
+
+      <div class="row">
+        <div class="col-6">
+          <h1>Get Updates</h1>
+          <p class="fw-light">Sign up for our mailing list to receive news and updates <br>about remove.bg products and services. You can<br> unsubscribe at any time.</p>
+        </div>
+        <div class="col-6">
+           <div class="input-group" id="input-group">
+              <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">Subscribe</span>
+
+
+            </div>
+        <p class="fw-light">To learn more about how remove.bg handles your personal data, check our Privacy Policy.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="star d-flex justify-content-center align-items-center mt-5">
+        <img src="product_rating.svg" alt="" srcset="">
+
+  </div>
+  <div class="thirthteenContainer d-flex justify-content-center align-items-start">
+  <div class="row d-flex align-items-start" id="links">
+
+   
+    <div class="col">
+      <h5 class="fw-bold mb-3">Learn more</h5>
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        <li><a href="">All features</a></li>
+        <li><a href="">Photographers</a></li>
+        <li><a href="">Marketing</a></li>
+        <li><a href="">Developers</a></li>
+        <li><a href="">Ecommerce</a></li>
+        <li><a href="">Media</a></li>
+        <li><a href="">Car Dealerships</a></li>
+        <li><a href="">Enterprise</a></li>
+        <li><a href="">Success stories</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="col">
+      <h5 class="fw-bold mb-3">Tools & API</h5>
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        <li><a href="">API Documentation</a></li>
+        <li><a href="">Integrations, tools & apps</a></li>
+        <li><a href="">Photoshop Extension</a></li>
+        <li><a href="">Windows / Mac / Linux</a></li>
+        <li><a href="">Android App</a></li>
+        <li><a href="">Design Templates</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="col">
+      <h5 class="fw-bold mb-3">Support</h5>
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        <li><a href="">Help & FAQs</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Refunds</a></li>
+        <li><a href="">Platform Status</a></li>
+        <li><a href="">Resources</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="col">
+      <h5 class="fw-bold mb-3">Company</h5>
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        <li><a href="">Blog</a></li>
+        <li><a href="">Affiliate Program</a></li>
+        <li><a href="">Create automatic designs</a></li>
+        <li><a href="">Video Background Removal</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Press & Partnerships</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
