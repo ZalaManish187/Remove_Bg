@@ -52,6 +52,7 @@ html, body {
     width: 400px;
     margin-top: 150px;
     margin-left: 150px;
+    border-radius: 25px;
 
 }
 
@@ -148,10 +149,12 @@ html, body {
 #sixthContainerCard {
   max-width: 380px;
   margin: auto;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 #sixthContainerCard2{
     height:67vh;
+  border-radius: 25px;
+
 }
 
 
@@ -275,6 +278,7 @@ html, body {
 
 .nineContainer {
     margin-top: 100px;
+   
     margin-bottom: 100px;
 }
 
@@ -345,6 +349,7 @@ ul li a {
     .navLogo {
         width: 200px;
     }
+    
 
     #firstContainer {
         display: flex;
@@ -373,6 +378,13 @@ ul li a {
     #headerCard {
         width: 100%;
         margin-top: 10px;
+    }
+    .fourthText{
+        font-size: 25px;
+    }
+   
+    .fourthTextP{
+        font-size: 12px;
     }
 
 
@@ -414,8 +426,7 @@ ul li a {
 
     #sixthContainerCard {
         width: 100%;
-        display: flex;
-        overflow: scroll;
+        
     }
 
     #sixthContainerImg {
@@ -427,15 +438,18 @@ ul li a {
     }
 
     #sixthContainerH1 {
-        font-size: 36px;
+        font-size: 30px;
     }
     #sixthContainerCard2{
-    height:100%;
     width:100%;
 }
 
     #tenContainer {
-        padding: 50px;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    #bgContainer{
+        padding:10px;
     }
 
     #input {
@@ -491,7 +505,9 @@ ul li a {
         width: 100%;
         height: 500px;
     }
-
+#nineContainertextImg{
+    gap:10px;
+}
 
 
 
@@ -510,6 +526,7 @@ ul li a {
       
 
     }
+   
      #headerCard {
         width: 100%;
         margin-top: 10px;
@@ -647,8 +664,9 @@ ul li a {
   .remove{
     text-align: center;
   }
+  
   #nineContainertextImg{
-    gap:125px;
+    gap:100px;
   }
     #fifthContainer{
         padding:0px;
