@@ -175,15 +175,22 @@ html, body {
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+     background-position: center;
+  margin: 0;
+}
+#tenContainer{
+    padding:100px;
+}
+#tenContainer2{
+    padding:100px;
+    margin-bottom: 100px;
 }
 
-#tenContainer {
-    padding: 80px;
-}
+
 
 #detailsCard {
-    width: 350px;
-    height: 200px;
+    max-width: 350px;
+    margin:auto;
     border-radius: 20px;
 }
 
@@ -227,6 +234,8 @@ html, body {
 #input {
     margin-top: 50px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #input input {
@@ -266,6 +275,7 @@ html, body {
 
 .nineContainer {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #nineContainerCard {
@@ -331,7 +341,7 @@ ul li a {
     }
 
     #headerImgVideo {
-        width: 400px;
+        width: 100%;
         margin-top: 0px;
         margin-left: 0px;
         padding: 0;
@@ -469,6 +479,16 @@ ul li a {
         align-items: center;
         gap: 50px;
     }
+      #headerImgVideo {
+        width: 100%;
+       
+      
+
+    }
+     #headerCard {
+        width: 100%;
+        margin-top: 10px;
+    }
 
     .videoText {
         display: flex;
@@ -490,8 +510,7 @@ ul li a {
     }
 
     #detailsCard {
-        width: 380px;
-        height: 260px;
+        width: 100%;
         gap: 150px;
     }
 
