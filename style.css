@@ -1,252 +1,320 @@
-*{
-    font-family: 'poppins',sans-serif;
-   font-weight: 700;
-   scrollbar-width: none;
+* {
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    scrollbar-width: none;
 }
-.navLogo{
-    width:200px;
+
+body {
+    overflow-x: hidden;
+
 }
-.headerH1{
+
+.navLogo {
+    width: 200px;
+}
+
+.headerH1 {
     font-size: 65px;
-    color:#454545;
+    color: #454545;
 }
-.headerH5{
-    color:#454545;
+
+.headerH5 {
+    color: #454545;
 }
-.bgText{
+
+.bgText {
     background-image: url("Images/deco-brush.svg");
-    width:50px;
-    padding:10px;
+    width: 50px;
+    padding: 10px;
     text-align: center;
     background-size: cover;
     background-clip: border-box;
 }
-.line{
-    color:orange;
-    
+
+.line {
+    color: orange;
+
 }
-#textImg{
-    gap:30px;
+
+#textImg {
+    gap: 30px;
 }
-.policyText{
+
+.policyText {
     font-size: 10px;
 }
-.firstContainer{
+
+.firstContainer {
     margin-top: 10px;
 }
-#headerImgVideo{
-    width:400px;
-    margin-top:150px;
+
+#headerImgVideo {
+    width: 400px;
+    margin-top: 150px;
     margin-left: 150px;
-    
+
 }
-.videoText{
+
+.videoText {
     margin-left: 150px;
 }
 
-#imagesCard{
-    width:50px;
-    height:50px;
+#imagesCard {
+    width: 50px;
+    height: 50px;
 }
-#headerCard{
-  width:430.4px;
-    height:395.2;
-    padding:100px;
+
+#headerCard {
+    width: 430.4px;
+    height: 395.2;
+    padding: 100px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     outline: 0;
-    border:0;
+    border: 0;
     margin-top: 180px;
     background-color: white;
 }
-#urlText{
+
+#urlText {
     font-size: 12px;
 }
-#upload{
-    width:220px;
+
+#upload {
+    width: 220px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
 }
-#rightSide{
+
+#rightSide {
     margin-top: 40px;
 }
-.secondContainer{
+
+.secondContainer {
     margin-top: 100px;
-}
-.thirdContainer{
-    margin-top: 100px;
-    padding:100px;
-}
-#thirdContainerImg{
-    width:300px;
 }
 
-.fourthContainer{
+.thirdContainer {
+    margin-top: 100px;
+    padding: 100px;
+}
+
+#thirdContainerImg {
+    width: 300px;
+}
+
+.fourthContainer {
     margin-top: 100px;
 }
-.fifthContainer{
+
+.fifthContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-#fifthContainer{
-    padding:100px;
+
 }
 
-.sixthContainer{
+#fifthContainer {
+    padding: 100px;
+}
+
+.sixthContainer {
     margin-top: 100px;
-    padding:100px;
+    padding: 100px;
 }
-#sixthContainerImg{
-    width:500px;
+
+#sixthContainerImg {
+    width: 500px;
 }
-.bgContainer{
+
+.bgContainer {
     background-image: url("Images/pattern-rbg.svg");
     background-repeat: no-repeat;
-    width:100%;
+    width: 100vw;
+
     background-size: cover;
-    padding:100px;
+    padding: 100px;
 }
-#sixthContainerCard{
-    width:380px;
-    height:480px;
+
+#sixthContainerCard {
+    width: 380px;
+    height: 480px;
 }
-.author{
+
+.author {
     margin-top: 100px;
 }
-#seventhContainerScroll{
+
+#seventhContainerScroll {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
-.eightContainer{
+
+.eightContainer {
     margin-top: 100px;
 }
-#bgContainer{
+
+#bgContainer {
     margin-top: 100px;
-  
-     background-image: url("Images/pattern-rbg.svg");
+
+    background-image: url("Images/pattern-rbg.svg");
     background-repeat: no-repeat;
-    width:100%;
+    width: 100%;
     background-size: cover;
 }
-#tenContainer{
-    padding:80px;
+
+#tenContainer {
+    padding: 80px;
 }
-#detailsCard{
-    width:350px;
-    height:200px;
+
+#detailsCard {
+    width: 350px;
+    height: 200px;
     border-radius: 20px;
 }
-#inputText{
+
+#inputText {
     font-size: 13px;
 }
+
 .titleTextH1,
 #companyHeader,
 #sixthContainerH1,
-.ramp{
-    color:#454545;
-
-}
-.remove{
-    color:#454545;
-    
-}
-.Blog{
-    color:#454545;
-
-}
-.articles{
-    color:#454545;
-
-}
-.update{
-    color:#454545;
-
-}
-.text{
-    color:#454545;
+.ramp {
+    color: #454545;
 
 }
 
-#input{
+.remove {
+    color: #454545;
+
+}
+
+.Blog {
+    color: #454545;
+
+}
+
+.articles {
+    color: #454545;
+
+}
+
+.update {
+    color: #454545;
+
+}
+
+.text {
+    color: #454545;
+
+}
+
+#input {
     margin-top: 50px;
     position: relative;
 }
-#input input{
-    width:150px;
-    height:50px;
+
+#input input {
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
-    color:#454545;
+    color: #454545;
 
 }
-#input span{
+
+#input span {
     border-radius: 10px;
     position: absolute;
-    right:10px;
+    right: 10px;
     margin-top: 5px;
-    border:0;
+    border: 0;
     outline: 0;
 }
-.elevenContainer{
+
+.elevenContainer {
     margin-top: 100px;
 }
-.twelveContainer{
+
+.twelveContainer {
     margin-top: 100px;
-   
+
 }
-#iconText{
+
+#iconText {
     text-align: left;
 }
-#cardContainer{
-    width:300px;
+
+#cardContainer {
+    width: 300px;
     border-radius: 20px;
 }
-.nineContainer{
+
+.nineContainer {
     margin-top: 100px;
 }
-#nineContainerCard{
-    width:430.4px;
-    height:395.2;
-    padding:100px;
+
+#nineContainerCard {
+    width: 430.4px;
+    height: 395.2;
+    padding: 100px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border:0;
-    outline:0;
+    border: 0;
+    outline: 0;
     border-radius: 30px;
 }
-.nineContainerpolicyText{
+
+.nineContainerpolicyText {
     font-size: 10px;
 }
-.bgColor{
+
+.bgColor {
     background-color: #54616c;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
 
 }
-.footerContainer{
+
+.footerContainer {
     margin-top: 100px;
-    padding:100px;
-    height:280px;
+
+    padding: 100px;
+    height: 280px;
 }
-#footerLink{
+
+#footerLink {
     font-size: 13px;
 }
-#footerText{
+
+#footerText {
     font-size: 13px;
 }
-ul{
+
+ul {
     list-style: none;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
 }
-@media(max-width:932px){
-    .navLogo{
-        width:200px;
+
+@media(max-width:932px) {
+    .navLogo {
+        width: 200px;
     }
-    #firstContainer{
+
+    #firstContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -254,157 +322,207 @@ ul li a{
         text-align: center;
         margin-top: 100px;
     }
-    #headerImgVideo{
-    width:400px;
-    margin-top:0px;
-    margin-left: 0px;
-    
-}
-.videoText{
-    margin-left: 0px;
-}
 
-    #headerCard{
+    #headerImgVideo {
+        width: 400px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0;
+
+    }
+
+    .videoText {
+        margin-left: 0px;
+    }
+
+    #headerCard {
+        width: 100%;
         margin-top: 10px;
     }
-    
 
-    .headerH1{
+
+    .headerH1 {
         font-size: 40px;
         text-align: center;
         margin-top: 20px;
     }
-    .headerH5{
+
+    .headerH5 {
         text-align: center;
         margin-top: 20px;
     }
-    .policyText{
+
+    .policyText {
         text-align: center;
     }
-    #textImg{
+
+    #textImg {
         flex-direction: column;
         text-align: center;
-        gap:5px;
+        gap: 5px;
     }
-    .titleBtn{
+
+    .titleBtn {
         overflow-x: scroll;
         scrollbar-width: none;
     }
-    #sixthContainerImg{
-    width:100%;
-}
-.sixthContainerText{
-    width:100%;
-}
-#sixthContainerH1{
-    font-size: 50px;
-}
-#tenContainer{
-    padding:50px;
-}
-#input{
-    width:100%;
-    margin-top: 50px;
-}
-#cardContainer{
-   width:100%;
-}
-.bgContainer{
-    
-    width:100%;
-    height:100%;
-}
-#detailsCard{
-    width:100%;
-}
-#nineContainerCard{
-    width:100%;
-}
-#footerContainer{
-    display: flex;
-    text-align: center;
-    
-}
-#iconFooter button{
-    margin-top: 20px;
+
+    #seventh {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #sixthContainerCard {
+        width: 100%;
+        display: flex;
+        overflow: scroll;
+    }
+
+    #sixthContainerImg {
+        width: 100%;
+    }
+
+    .sixthContainerText {
+        width: 100%;
+    }
+
+    #sixthContainerH1 {
+        font-size: 50px;
+    }
+
+    #tenContainer {
+        padding: 50px;
+    }
+
+    #input {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #cardContainer {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    #fifthContainer {
+        padding: 10px;
+    }
+
+    .bgContainer {
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #detailsCard {
+        width: 100%;
+    }
+
+    #nineContainerCard {
+        width: 100%;
+    }
+
+    #footerContainer {
+        display: flex;
+        text-align: center;
+
+    }
+
+    #iconFooter button {
+        margin-top: 20px;
+
+    }
+
+    #footerLink {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bgColor {
+        width: 100%;
+        height: 500px;
+    }
+
+
+
 
 }
-#footerLink{
-    display: flex;
-    flex-direction: column;
-}
-.link{
-    display: flex;
-    flex-direction: column-reverse;
-}
-.bgColor{
-    width:100%;
-    height:500px;
-}
 
-
-
-    
-}
 @media (min-width: 820px) and (max-width: 1180px) {
-  #tabletSize {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  .videoText{
-    display: flex;
-    flex-direction: column;
-  }
-  .bgText{
-    margin-top: 10px;
-  }
-  #textImg{
-    flex-direction: row;
-    gap:25px;
-  }
-  .privacy-policy {
-    text-align: center;
-    max-width: 450px;
-  }
-  #detailsCard{
-    width:380px;
-    height:260px;
-    gap:150px;
-  }
- 
-  #textEmail{
-    display: flex;
-  }
-  #tenContainer{
-    padding:30px;
-  }
-  .bgContainer{
-    padding:0px;
-  }
-  .companyHeader{
-    margin-top: 50px;
-  }
-  #seventh{
-    display: flex;
-    gap:80px;
-  }
-  #textCard{
-    font-size: 14px;
-  }
-  #sixthContainerCard{
-    width:220px;
-    height:480px;
+    #tabletSize {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
 
-  }
-  
-  #companyLogo{
-    width:130px;
-  }
+    .videoText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bgText {
+        margin-top: 10px;
+    }
+
+    #textImg {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .privacy-policy {
+        text-align: center;
+        max-width: 450px;
+    }
+
+    #detailsCard {
+        width: 380px;
+        height: 260px;
+        gap: 150px;
+    }
+
+    #textEmail {
+        display: flex;
+    }
+
+    #tenContainer {
+        padding: 30px;
+    }
+
+    .bgContainer {
+        padding: 0px;
+    }
+
+    .companyHeader {
+        margin-top: 50px;
+    }
+
+    #seventh {
+        display: flex;
+        gap: 80px;
+    }
+
+    #textCard {
+        font-size: 14px;
+    }
+
+    #sixthContainerCard {
+        width: 220px;
+        height: 480px;
+
+    }
+
+    #companyLogo {
+        width: 130px;
+    }
 }
 
 
-@media (min-width:1080px) and (max-width:1920px){
-    
-}
+@media (min-width:1080px) and (max-width:1920px) {}
