@@ -4,10 +4,10 @@
     scrollbar-width: none;
 }
 
-body {
-    overflow-x: hidden;
-
+html, body {
+  overflow-x: hidden;
 }
+
 
 .navLogo {
     width: 200px;
@@ -133,29 +133,36 @@ body {
 }
 
 .bgContainer {
-    background-image: url("Images/pattern-rbg.svg");
-    background-repeat: no-repeat;
-    width: 100vw;
-
-    background-size: cover;
-    padding: 100px;
+  background-image: url("Images/pattern-rbg.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 100px 0;
 }
 
+#seventhContainerScroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 #sixthContainerCard {
-    width: 380px;
-    height: 480px;
+  max-width: 350px;
+  margin: auto;
 }
+
+
+
+
 
 .author {
     margin-top: 100px;
 }
 
-#seventhContainerScroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
+
 
 .eightContainer {
     margin-top: 100px;
