@@ -15,7 +15,7 @@ html, body {
 
 .headerH1 {
     font-size: 65px;
-    color: #454545;
+   color:#454545;
 }
 
 .headerH5 {
@@ -121,12 +121,11 @@ html, body {
 }
 
 .sixthContainer {
-    margin-top: 100px;
     padding: 100px;
 }
 
 #sixthContainerImg {
-    width: 500px;
+    width: 480px;
 }
 
 .bgContainer {
@@ -147,8 +146,12 @@ html, body {
   gap: 20px;
 }
 #sixthContainerCard {
-  max-width: 350px;
+  max-width: 380px;
   margin: auto;
+  border-radius: 30px;
+}
+#sixthContainerCard2{
+    height:67vh;
 }
 
 
@@ -322,6 +325,21 @@ ul {
 ul li a {
     text-decoration: none;
 }
+#nineContainertextImg{
+    gap:50px;
+}
+#languageBtn{
+    border-radius: 20px;
+    width:12    0px;
+    padding:10px;
+}
+#iconFooter button{
+    border-radius: 50%;
+    height:45px;
+    width:45px;
+    border:0;
+    outline: 0;
+}
 
 @media(max-width:932px) {
     .navLogo {
@@ -409,8 +427,12 @@ ul li a {
     }
 
     #sixthContainerH1 {
-        font-size: 50px;
+        font-size: 36px;
     }
+    #sixthContainerCard2{
+    height:100%;
+    width:100%;
+}
 
     #tenContainer {
         padding: 50px;
@@ -493,11 +515,20 @@ ul li a {
         margin-top: 10px;
     }
 
-    .videoText {
-        display: flex;
-        flex-direction: column;
+    .headerH1{
+        text-align: left;
+        font-size: 50px;
     }
-
+    .headerH5{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+#firstContainer{
+    margin-top: 150px;
+}
     .bgText {
         margin-top: 10px;
     }
@@ -514,7 +545,7 @@ ul li a {
 
     #detailsCard {
         width: 100%;
-        gap: 150px;
+       
     }
 
     #textEmail {
@@ -522,20 +553,15 @@ ul li a {
     }
 
     #tenContainer {
-        padding: 30px;
+        padding: 20px;
     }
 
     .bgContainer {
-        padding: 0px;
+        padding: 40px;
     }
 
     .companyHeader {
         margin-top: 50px;
-    }
-
-    #seventh {
-        display: flex;
-        gap: 80px;
     }
 
     #textCard {
@@ -543,15 +569,91 @@ ul li a {
     }
 
     #sixthContainerCard {
-        width: 220px;
-        height: 480px;
-
+        width: 100%;
+    }
+     #sixthContainerCard2 {
+        height: 100%;
     }
 
     #companyLogo {
         width: 130px;
     }
+    #sixthContainerImg{
+        width: 500px;
+    }
+    #sixthContainerH1{
+        font-size: 35px;
+    }
+   
+   
 }
 
 
-@media (min-width:1080px) and (max-width:1920px) {}
+@media (min-width:1024px) and (max-width:1366px) {
+     #tabletSize {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    #rightSide{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .headerH1 {
+    text-align: right;
+}
+#upload{
+    width:100%;
+   
+}
+    #headerImgVideo {
+        width: 100%;
+        max-width: 420px;
+        margin-top: 0px;
+        margin-left: 0px;
+       
+      
+
+    }
+    .videoText{
+        margin-left: 0px;
+    }
+    #textImg{
+        display: flex;
+        justify-content: center;
+        gap:100px;
+    }
+    
+      #headerCard {
+        width: 400px;
+      
+    }
+    #firstContainer{
+        gap:0px;
+    }
+  .thirdTextP{
+    display: flex;
+    font-size: 31px;
+  }
+   #sixthContainerCard2 {
+        height: 100%;
+    }
+  #sixthContainerH1{
+    font-size: 31px;
+  }
+  .remove{
+    text-align: center;
+  }
+  #nineContainertextImg{
+    gap:125px;
+  }
+    #fifthContainer{
+        padding:0px;
+    }
+    #footerLink{
+        font-size: 10px;
+    }
+}
