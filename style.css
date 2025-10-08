@@ -1,21 +1,75 @@
 * {
     font-family: 'poppins', sans-serif;
-    font-weight: 700;
     scrollbar-width: none;
 }
 
-html, body {
-  overflow-x: hidden;
+/* Import Open Sans (400, 500, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+/* Import Poppins (300–600) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* devanagari */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 
 .navLogo {
-    width: 200px;
+    width: 210px;
+}
+
+#nav-link {
+    font-weight: 100;
+    font-size: 15px;
+    color: rgba(69, 69, 69, 0.918);
+    line-height: 20px;
+    font-family: "Canva Sans", sans-serif;
+
+}
+
+nav {
+
+    font-style: bold;
+
 }
 
 .headerH1 {
-    font-size: 65px;
-   color:#454545;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 600;
+    color: #454545;
+    font-family: 'poppins', sans-serif;
 }
 
 .headerH5 {
@@ -31,8 +85,49 @@ html, body {
     background-clip: border-box;
 }
 
-.line {
-    color: orange;
+#dropfileText {
+    color: #536270;
+}
+.noImg{
+    color:rgb(84,97,108);
+    font-weight:600;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+}
+#secondBtn{
+    font-weight: 500;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-size: 16px;
+    color:rgb(69, 69, 69);
+    line-height: 24px;
+
+}
+.line2 img{
+    animation : line2 2s linear;
+}
+@keyframes line2 {
+    from{
+        transform: rotate(20deg);
+    }
+
+}
+
+
+
+.line img {
+    height: 250px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 100px;
+    animation: line 2s linear;
+
+}
+@keyframes line {
+    from{
+        transform: rotate(20deg);
+    }
 
 }
 
@@ -40,17 +135,30 @@ html, body {
     gap: 30px;
 }
 
-.policyText {
-    font-size: 10px;
+ .policyText {
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        color:rgb(84,97,108);
+        font-weight: 400;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+
+        
+}
+.nineContainerpolicyText{
+     text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        color:rgb(84,97,108);
+        font-weight: 400;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
 }
 
-.firstContainer {
-    margin-top: 10px;
-}
+
 
 #headerImgVideo {
     width: 400px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 150px;
     border-radius: 25px;
 
@@ -65,37 +173,78 @@ html, body {
     height: 50px;
 }
 
+#sign-up {
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 80px;
+    color: rgb(69, 69, 69);
+    line-height: 20px;
+    font-family: "Canva Sans", sans-serif;
+}
+
 #headerCard {
     width: 430.4px;
-    height: 395.2;
-    padding: 100px;
+    height: 320px;
+    padding: 80px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     outline: 0;
     border: 0;
-    margin-top: 180px;
+    margin-top: 200px;
+    position: relative;
     background-color: white;
 }
 
+.thirdTextsecond {
+    font-size: 15px;
+}
+#textCard{
+    font-size: 20px;
+    line-height: 28px;
+    color:rgb(69, 69, 69);
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.name{
+    font-size: 16px;
+    color:rgb(84,97,108);
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-style: normal;
+}
+
 #urlText {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #54616c;
 }
 
 #upload {
     width: 100%;
     height: 50px;
-   
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+
     border-radius: 50px;
+}
+
+#dropfileText {
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #54616c;
 }
 
 #rightSide {
     margin-top: 40px;
 }
 
-.secondContainer {
-    margin-top: 100px;
-}
+
 
 .thirdContainer {
     margin-top: 100px;
@@ -104,6 +253,21 @@ html, body {
 
 #thirdContainerImg {
     width: 300px;
+}
+
+.fourthText {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #454545;
+}
+
+.fourthTextP {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
 }
 
 .fourthContainer {
@@ -130,30 +294,45 @@ html, body {
 }
 
 .bgContainer {
-  background-image: url("Images/pattern-rbg.svg");
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 100px 0;
+    background-image: url("Images/pattern-rbg.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 100px 0;
 }
 
 #seventhContainerScroll {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
 #sixthContainerCard {
-  max-width: 380px;
-  margin: auto;
-  border-radius: 25px;
+    max-width: 380px;
+    margin: auto;
+    border-radius: 25px;
 }
-#sixthContainerCard2{
-    height:67vh;
-  border-radius: 25px;
+
+#work{
+    font-size: 14px;
+    font-weight: 100;
+    color:rgb(84,97,108);
+    line-height: 24px;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+
+
+}
+#readText{
+    font-size: 20px;
+    color:rgb(84,97,108);
+    line-height: 28px;
+    font-weight: 600;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+
 
 }
 
@@ -178,14 +357,16 @@ html, body {
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-     background-position: center;
-  margin: 0;
+    background-position: center;
+    margin: 0;
 }
-#tenContainer{
-    padding:100px;
+
+#tenContainer {
+    padding: 100px;
 }
-#tenContainer2{
-    padding:100px;
+
+#tenContainer2 {
+    padding: 100px;
     margin-bottom: 100px;
 }
 
@@ -193,7 +374,7 @@ html, body {
 
 #detailsCard {
     max-width: 350px;
-    margin:auto;
+    margin: auto;
     border-radius: 20px;
 }
 
@@ -201,11 +382,62 @@ html, body {
     font-size: 13px;
 }
 
-.titleTextH1,
-#companyHeader,
-#sixthContainerH1,
-.ramp {
+.titleTextH1{
+    color:#454545;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+}
+.thirdTextsecond{
+    color:rgb(10,10,10);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+
+}
+.thirdTextP{
+    font-size: 32px;
+    font-family: 'poppins' sans-serif;
+    font-weight: bold;
+    font-style:normal;
+    line-height: 42px;
+    color:rgb(69, 69, 69);
+
+
+}
+#textDetails{
+   color:rgb(10,10,10);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+
+}
+#iText{
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    color:rgb(84,97,108);
+}
+#sixthContainerH1{
+    font-size: 32px;
+    color:rgb(69, 69, 69);
+    line-height: 42px;
+    font-weight: 600;
+}
+#companyHeader {
     color: #454545;
+    font-size: 48px;
+    line-height: 64px;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+font-weight: 600;
+color:rgb(69, 69, 69);
+
 
 }
 
@@ -225,15 +457,31 @@ html, body {
 }
 
 .update {
-    color: #454545;
+       color:rgb(69, 69, 69);
+
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+font-size: 32px;
+line-height: 42px;
+font-weight: 600;
+font-style: normal;
+
 
 }
+.text{
+    font-size: 16px;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+       color:rgb(69, 69, 69);
+font-weight: 400;
+line-height: 24px;
+}
+.Policy{
+    font-size: 11px;
+    font-weight: 400;
+    color:rgb(84,97,108);
+    font-family: "Canva Sans", "Open Sans", sans-serif;
 
-.text {
-    color: #454545;
 
 }
-
 #input {
     margin-top: 50px;
     position: relative;
@@ -260,11 +508,21 @@ html, body {
 
 .elevenContainer {
     margin-top: 100px;
+    
+
 }
 
 .twelveContainer {
     margin-top: 100px;
+   
 
+}
+#links{
+ font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color:rgb(84,97,108);
 }
 
 #iconText {
@@ -278,7 +536,7 @@ html, body {
 
 .nineContainer {
     margin-top: 100px;
-   
+
     margin-bottom: 100px;
 }
 
@@ -329,27 +587,79 @@ ul {
 ul li a {
     text-decoration: none;
 }
-#nineContainertextImg{
-    gap:50px;
+
+#nineContainertextImg {
+    gap: 50px;
 }
-#languageBtn{
+
+#languageBtn {
     border-radius: 20px;
-    width:12    0px;
-    padding:10px;
+    width: 12 0px;
+    padding: 10px;
 }
-#iconFooter button{
+
+#iconFooter button {
     border-radius: 50%;
-    height:45px;
-    width:45px;
-    border:0;
+    height: 45px;
+    width: 45px;
+    border: 0;
     outline: 0;
+}
+#eightBtn{
+     font-weight: 500;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-size: 16px;
+    color:rgb(69, 69, 69);
+    line-height: 24px;
+}
+#Original ,
+#transBg,
+#newBg,
+#end{
+    font-size: 14px;
+    color:rgb(84,97,108);
+    font-weight: 400;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    line-height: 20px;
+}
+#get{
+    font-size: 16px;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-weight: 400;
+    color:rgb(69, 69, 69);
+    line-height: 24px;
+
+}
+#blogCardText{
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:rgb(69, 69, 69);
+    line-height: 24px;
+
+}
+#date{
+    font-size: 16px;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+font-weight: 400;
+line-height: 24px;
+
 }
 
 @media(max-width:932px) {
     .navLogo {
         width: 200px;
     }
+
+    #line{
     
+    display: none;
+
+}
+.titleTextH1{
+    font-size: 35px;
+}
+
 
     #firstContainer {
         display: flex;
@@ -359,7 +669,8 @@ ul li a {
         text-align: center;
         margin-top: 100px;
     }
-    #secondContainerImg{
+
+    #secondContainerImg {
         margin-top: 50px;
     }
 
@@ -379,11 +690,12 @@ ul li a {
         width: 100%;
         margin-top: 10px;
     }
-    .fourthText{
-        font-size: 25px;
+
+    .fourthText {
+        font-size: 31px;
     }
-   
-    .fourthTextP{
+
+    .fourthTextP {
         font-size: 12px;
     }
 
@@ -401,6 +713,11 @@ ul li a {
 
     .policyText {
         text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        color:rgb(84,97,108);
+        font-weight: 400;
+
     }
 
     #textImg {
@@ -413,7 +730,8 @@ ul li a {
         overflow-x: scroll;
         scrollbar-width: none;
     }
-    .titleBtn button{
+
+    .titleBtn button {
         margin-top: 20px;
     }
 
@@ -426,7 +744,7 @@ ul li a {
 
     #sixthContainerCard {
         width: 100%;
-        
+
     }
 
     #sixthContainerImg {
@@ -440,16 +758,18 @@ ul li a {
     #sixthContainerH1 {
         font-size: 30px;
     }
-    #sixthContainerCard2{
-    width:100%;
-}
+
+    #sixthContainerCard2 {
+        width: 100%;
+    }
 
     #tenContainer {
         padding: 0px;
         margin-top: 50px;
     }
-    #bgContainer{
-        padding:10px;
+
+    #bgContainer {
+        padding: 10px;
     }
 
     #input {
@@ -505,9 +825,10 @@ ul li a {
         width: 100%;
         height: 500px;
     }
-#nineContainertextImg{
-    gap:10px;
-}
+
+    #nineContainertextImg {
+        gap: 10px;
+    }
 
 
 
@@ -520,32 +841,50 @@ ul li a {
         align-items: center;
         gap: 50px;
     }
-      #headerImgVideo {
+
+    #headerImgVideo {
         width: 100%;
-       
-      
+
+
 
     }
+   .line img {
+    height: 250px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 10px;
+    display: block;
+
+}
+#line{
+    display: block;
+}
    
-     #headerCard {
+
+    #headerCard {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 100px;
+    position: relative;
+
     }
 
-    .headerH1{
+    .headerH1 {
         text-align: left;
         font-size: 50px;
     }
-    .headerH5{
+
+    .headerH5 {
         text-align: left;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap:10px;
+        gap: 10px;
     }
-#firstContainer{
-    margin-top: 150px;
-}
+
+    #firstContainer {
+        margin-top: 150px;
+    }
+
     .bgText {
         margin-top: 10px;
     }
@@ -562,7 +901,7 @@ ul li a {
 
     #detailsCard {
         width: 100%;
-       
+
     }
 
     #textEmail {
@@ -588,90 +927,116 @@ ul li a {
     #sixthContainerCard {
         width: 100%;
     }
-     #sixthContainerCard2 {
+
+    #sixthContainerCard2 {
         height: 100%;
     }
 
     #companyLogo {
         width: 130px;
     }
-    #sixthContainerImg{
+
+    #sixthContainerImg {
         width: 500px;
     }
-    #sixthContainerH1{
+
+    #sixthContainerH1 {
         font-size: 35px;
     }
-   
-   
+
+
 }
 
 
 @media (min-width:1024px) and (max-width:1366px) {
-     #tabletSize {
+    #tabletSize {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 50px;
     }
-    #rightSide{
+
+    #rightSide {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
+
     .headerH1 {
-    text-align: right;
-}
-#upload{
-    width:100%;
-   
-}
+        text-align: right;
+    }
+
+    #upload {
+        width: 100%;
+
+    }
+
     #headerImgVideo {
         width: 100%;
         max-width: 420px;
         margin-top: 0px;
         margin-left: 0px;
-       
-      
+
+
 
     }
-    .videoText{
+
+    .videoText {
         margin-left: 0px;
     }
-    #textImg{
+
+    #textImg {
         display: flex;
         justify-content: center;
-        gap:100px;
+        gap: 100px;
     }
-    
-      #headerCard {
+     .line img {
+    height: 200px;
+    position: absolute;
+    margin-left: 380px;
+    display: none;
+
+}
+#line{
+    display: block;
+}
+
+    #headerCard {
         width: 400px;
-      
+
     }
-    #firstContainer{
-        gap:0px;
+
+    #firstContainer {
+        gap: 0px;
     }
-  .thirdTextP{
-    display: flex;
-    font-size: 31px;
-  }
-   #sixthContainerCard2 {
+
+    .thirdTextP {
+        display: flex;
+        font-size: 31px;
+    }
+
+    #sixthContainerCard2 {
         height: 100%;
     }
-  #sixthContainerH1{
-    font-size: 31px;
-  }
-  .remove{
-    text-align: center;
-  }
-  
-  #nineContainertextImg{
-    gap:100px;
-  }
-    #fifthContainer{
-        padding:0px;
+
+    #sixthContainerH1 {
+        font-size: 31px;
     }
-    #footerLink{
+
+    .remove {
+        text-align: center;
+    }
+
+    #nineContainertextImg {
+        gap: 100px;
+    }
+
+    #fifthContainer {
+        padding: 0px;
+    }
+
+    #footerLink {
         font-size: 10px;
     }
 }

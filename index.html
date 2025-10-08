@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -19,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm  p-3 mb-5 bg-body rounded fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="Images/logo.webp" alt="" srcset="" class="navLogo">
+                <img src="Images/logo.png" alt="" srcset="" class="navLogo">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,24 +32,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-normal mx-lg-3" aria-current="page" href="#">Uploads</a>
+                        <a class="nav-link mx-lg-3" aria-current="page" href="#" id="nav-link">Uploads</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-normal mx-lg-3" href="#">Bulk Editing</a>
+                        <a class="nav-link mx-lg-3" href="#" id="nav-link">Bulk Editing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-normal mx-lg-3" href="#">API</a>
+                        <a class="nav-link mx-lg-3" href="#" id="nav-link">API</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-normal mx-lg-3" href="#">Integrations</a>
+                        <a class="nav-link mx-lg-3" href="#" id="nav-link">Integrations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-normal mx-lg-3" href="#">Pricing</a>
+                        <a class="nav-link mx-lg-3" href="#" id="nav-link">Pricing</a>
                     </li>
                 </ul>
                 <form class="d-flex gap-4">
-                    <button type="button" class="btn btn-light">Log In</button>
-                    <button type="button" class="btn btn-light">Sign Up</button>
+                    <button type="button" class="btn btn-light" id="nav-link">Log In</button>
+                    <button type="button" class="btn btn-light" id="sign-up">Sign Up</button>
 
                 </form>
             </div>
@@ -56,29 +58,31 @@
 
     <div class="firstContainer container">
         <div class="row" id="firstContainer">
-            <div class="col-12 col-sm-12 col-lg-7 col-md-6" id="tabletSize">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6" id="tabletSize">
                 <video src="Images/manuel_compressed.mp4" autoplay loop muted playsinline id="headerImgVideo">
 
                 </video>
                 <div class="videoText">
                     <h1 class="headerH1 fw-bold">Remove Image<br> Background</h1>
-                    <h5 class="headerH5 fw-bold mt-3">100% Automatically and <span class="bgText">Free</span></h5>
+                    <h5 class="headerH5 fw-light mt-3">100% Automatically and <span class="bgText">Free</span></h5>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-lg-4 col-md-8" id="rightSide">
-                <!-- <div class="line">
-                        <svg width="184" height="160" viewBox="0 0 184 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-brand absolute hidden md:block -top-16 -right-[40%] xl:-right-1/2 transition ease-in-out transform-gpu"><path d="M182.648 183.128C178.597 187.405 171.028 191.799 163.237 191.977C157.571 192.103 152.323 190.012 148.058 185.927C139.232 177.468 138.372 158.735 137.621 142.22C137.204 133.157 136.747 122.877 134.696 119.768C131.836 115.376 124.509 108.471 107.735 111.458C94.4152 113.834 81.7884 115.329 73.6959 107.665C64.5031 98.9588 66.3544 85.5644 68.5325 76.244C69.271 73.0119 70.4408 69.8949 72.0105 66.9765C67.2371 63.1964 63.8062 58.7353 62.4015 54.3978C60.8072 49.4882 61.1485 43.5448 61.4696 37.8066C61.9457 29.5112 62.3974 21.6751 57.4255 18.3185C52.9599 15.3123 37.4838 14.4287 30.2947 16.7929C23.7769 18.9234 13.5899 18.9589 1.99423 6.93367C1.6401 6.5666 1.36158 6.13357 1.17454 5.65932C0.987495 5.18506 0.895589 4.67887 0.904109 4.16963C0.912629 3.66038 1.02138 3.15807 1.22417 2.69136C1.42696 2.22466 1.71981 1.80269 2.086 1.44957C2.45218 1.09646 2.88452 0.819116 3.35835 0.63335C3.83218 0.447587 4.33822 0.357049 4.84756 0.366916C5.3569 0.376784 5.85958 0.486848 6.32689 0.690842C6.7942 0.894836 7.21699 1.18879 7.57112 1.55585C12.4264 6.59173 19.8904 12.0448 27.8628 9.42376C35.8352 6.80273 54.2649 6.8425 61.7549 11.8939C70.3895 17.7206 69.7629 28.6339 69.2095 38.2642C68.9095 43.5287 68.6214 48.5014 69.7664 52.0262C70.775 55.1189 73.3834 58.1558 76.531 60.6768C76.9819 60.2006 77.4049 59.754 77.8356 59.3765C82.0627 55.4357 86.9774 53.4477 91.2962 53.9361C96.6192 54.5284 100.113 58.7801 100.195 64.7704C100.25 70.0573 97.3594 73.7039 92.4487 74.5175C88.6575 75.1291 83.6402 73.9231 78.5462 71.2419C77.4414 73.3904 76.607 75.6679 76.0619 78.0227C73.2511 90.0426 74.1576 97.4483 79.0031 102.037C84.4653 107.21 95.0526 105.831 106.352 103.814C122.037 101.019 134.401 105.177 141.174 115.524C144.395 120.438 144.815 129.89 145.362 141.875C146.018 156.197 146.832 174.017 153.401 180.345C156.233 183.027 159.368 184.313 163.024 184.23C168.933 184.098 174.615 180.307 176.996 177.793C177.702 177.048 178.675 176.614 179.703 176.588C180.73 176.561 181.727 176.944 182.474 177.651C183.221 178.359 183.657 179.333 183.687 180.361C183.716 181.388 183.336 182.384 182.63 183.129L182.648 183.128ZM83.3056 64.9216C86.4005 66.4052 89.3016 67.1611 91.1914 66.8526C91.9094 66.7359 92.4752 66.6434 92.4525 64.8379C92.4131 61.8384 91.0498 61.6861 90.4681 61.6233C88.7028 61.4381 85.9689 62.5013 83.2972 64.9304L83.3056 64.9216Z" fill="currentColor"></path></svg>
-                    </div> -->
+                 <div class="line">
+                    <img src="Images/line.png" id="line" alt="" srcset="">
+                    </div> 
+               
                 <div class="shadow mb-5" id="headerCard">
-                    <button type="button" class="btn btn-primary" id="upload">Upload Image</button>
-                    <div class="text-center mt-2">
-                        <p class="fw-light fs-3">or drop a file,</p>
-                        <p class="fw-light" id="urlText">paste image or <span class="border-bottom">URL</span>​</p>
+                    
+                    <button type="button" class="btn btn-primary mt-4" id="upload">Upload Image</button>
+                    <div class="text-center mt-4">
+                        <p id="dropfileText">or drop a file,</p>
+                        <p  id="urlText">paste image or <span class="border-bottom">URL</span>​</p>
                     </div>
                 </div>
                 <div class="tryImges mt-5">
                     <div class="d-flex" id="textImg">
-                        <p class="text-nowrap fw-normal">No image? <br>
+                        <p class="text-nowrap noImg">No image? <br>
                             Try one of these:</p>
                         <div class="images d-flex justify-content-center align-items-center gap-2">
                             <img src="Images/1.webp" class="card-img img-fluid" id="imagesCard" alt="...">
@@ -89,7 +93,7 @@
 
                     </div>
                     <div class="privacy-policy  mt-3">
-                        <span class="fw-light policyText">By uploading an image or URL you agree to our <span
+                        <span class="policyText">By uploading an image or URL you agree to our <span
                                 class="border-bottom">Terms of Service</span>. To
                             learn more about how remove.bg handles your personal data, check our <span
                                 class="border-bottom">Privacy Policy.</span></span>
@@ -97,6 +101,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="line2 container">
+        <img src="Images/line2.png" id="line" alt="" srcset="">
     </div>
     <div class="secondContainer">
         <div class="row">
@@ -106,11 +113,11 @@
                 </div>
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="titleBtn d-flex justify-content-center align-items-center gap-5 mt-3">
-                        <button type="button" class="btn btn-light">Products</button>
-                        <button type="button" class="btn btn-light">People</button>
-                        <button type="button" class="btn btn-light">Animals</button>
-                        <button type="button" class="btn btn-light">Cars</button>
-                        <button type="button" class="btn btn-light">Graphics</button>
+                        <button type="button" class="btn btn-light" id="secondBtn">Products</button>
+                        <button type="button" class="btn btn-light" id="secondBtn">People</button>
+                        <button type="button" class="btn btn-light" id="secondBtn">Animals</button>
+                        <button type="button" class="btn btn-light" id="secondBtn">Cars</button>
+                        <button type="button" class="btn btn-light" id="secondBtn">Graphics</button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
@@ -128,10 +135,10 @@
         <div class="row g-4">
             <div class="col-12 col-sm-12 col-lg-6 col-md-9 d-flex justify-content-center align-items-center">
                 <div class="text">
-                    <h1 class="fw-bolder fs-md-3 mb-3 thirdTextP">All-in-one AI background<br
+                    <h1 class="mb-3 thirdTextP">All-in-one AI background<br
                             class="d-none d-md-block">remover & generator</h1>
-                    <p class="fw-light thirdTextsecond text-muted mb-2">remove.bg is your go-to, high-quality background remover,<br class="d-none d-md-block">  making it easy to cut out a picture and isolate the <br class="d-none d-md-block">background with incredible accuracy.</p>
-                  <p class="fw-light text">But it doesn’t stop there. With the AI background<br class="d-none d-md-block"> generator, you can instantly create custom backdrops - no <br class="d-none d-md-block">need to write a prompt.</p>
+                    <p class="thirdTextsecond mb-2">remove.bg is your go-to, high-quality background remover,<br class="d-none d-md-block">  making it easy to <span class="text-dark fw-bold">cut out a picture</span> and isolate the <br class="d-none d-md-block">background with incredible accuracy.</p>
+                  <p class="thirdTextsecond">But it doesn’t stop there. With the AI background<br class="d-none d-md-block"> generator, you can instantly <span class="text-dark fw-bold"> create custom backdrops </span> - no <br class="d-none d-md-block">need to write a prompt.</p>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-lg-6 col-md-3 d-flex justify-content-center align-items-center">
@@ -142,10 +149,8 @@
     <div class="fourthContainer">
         <div class="row d-flex justify-content-center align-items-center text-center">
             <div class="col-12 col-sm-12 col-lg-12 col-md-12">
-                <h1 class="fourthText fw-bolder ramp">Ramp up the creativity - and efficiency!</h1>
-                <p class="fw-light mt-4 fourthTextP">Whether you want to make a mind-blowing greetings card for your bestie or
-                    to power through <br>
-                    thousands of car photos in next to no time, remove.bg makes it happen.</p>
+                <h1 class="fourthText ramp">One tool, endless uses</h1>
+                <p class="mt-4 fourthTextP">Edit your photos’ backgrounds to white for flawless <span class="text-dark fw-bold"> e-commerce shots, car listings,</span> or <span class="text-dark fw-bold">professional <br class="d-none d-md-block">headshots.</span> Create a transparent background (PNG) to design the perfect <span class="text-dark fw-bold">logo</span> or <span class="fw-bold text-dark">graphic</span> for any<br class="d-none d-md-block"> project or presentation. Whatever your need, remove.bg saves you time and helps you deliver <br class="d-none d-md-block">professional results in seconds.</p>
             </div>
         </div>
     </div>
@@ -155,7 +160,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-wand-magic-sparkles fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light mt-2">Magic Brush <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 class="mt-2" id="iText">Magic Brush <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -164,7 +169,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-heart-pulse fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Individuals <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6  id="iText">for Individuals <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -173,7 +178,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-camera fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Photographers <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Photographers <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -182,7 +187,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-comment fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Marketing <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Marketing <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -191,7 +196,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-code fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Developers <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Developers <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -200,7 +205,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-cart-shopping fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Ecommerce <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Ecommerce <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -209,7 +214,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-tv fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Media <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Media <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -218,7 +223,7 @@
                 <div class="card h-100 text-center p-3 shadow-sm" id="cardContainer">
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-car fs-3 mb-2 text-secondary"></i>
-                        <h6 class="fw-light">for Car Dealerships <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Car Dealerships <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -228,7 +233,7 @@
                     <div class="card-body" id="iconText">
                         <i class="fa-solid fa-table fs-3 mb-2 text-secondary"></i>
 
-                        <h6 class="fw-light">for Enterprise <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
+                        <h6 id="iText">for Enterprise <i class="fa-solid fa-arrow-right text-secondary"></i></h6>
                     </div>
                 </div>
             </div>
@@ -243,15 +248,15 @@
             </div>
             <div class="col-12 col-sm-12 col-lg-6 col-md-8">
                 <div class="sixthContainerText">
-                    <h1 class="fw-bold fs-md-3 mb-3" id="sixthContainerH1">Boost your efficiency with <br
+                    <h1 class="fs-md-3 mb-3" id="sixthContainerH1">Boost your efficiency with <br
                             class="d-none d-md-block"> automated background <br class="d-none d-md-block"> removal
                     </h1>
-                    <p class="fw-light text-muted mb-3">With remove.bg, deleting backgrounds and extracting the
+                    <p class="mb-3" id="textDetails">With remove.bg, deleting backgrounds and extracting the <br class="d-none d-md-block">
                         subject from an image is fast and effortless.</p>
-                    <p class="fw-light text-muted mb-3">Bulk editing lets you process up to 500 images per minute,
-                        while integrations with tools like Figma, Photoshop, and Zapier embed background removal
-                        directly into your workflow.</p>
-                    <p class="fw-light text-muted mb-4">And, with the mobile app, you can erase backgrounds on the
+                    <p class="mb-3" id="textDetails">Bulk editing lets you <span class="fw-bold text-dark">process up to 500 images per minute,</span><br class="d-none d-md-block">
+                        while integrations with tools like<span class="text-dark fw-bold"> Figma,Photoshop,</span>  and <br class="d-none d-md-block"><span class="text-dark fw-bold">Zapier</span> embed background removal
+                        directly into your <br class="d-none d-md-block">workflow.</p>
+                    <p class="mb-4" id="textDetails">And, with the mobile app, you can erase backgrounds on the
                         go, anytime, anywhere.</p>
                     <div class="d-flex flex-column gap-3 flex-md-row flex-lg-column">
                         <span class="fw-light text-primary">remove.bg's integrations <i
@@ -270,7 +275,7 @@
         <div class="seventhContainer container">
             <div class="row">
                 <div class="col-12 col-lg-12 col-md-12 text-center mt-2">
-                    <h1 class="fw-bolder" id="companyHeader">They love us. You will too.</h1>
+                    <h1 id="companyHeader">They love us. You will too.</h1>
                 </div>
             </div>
             <div id="seventhContainerScroll">
@@ -280,32 +285,32 @@
                             <img src="Images/company_logo1.webp" id="companyLogo" width="220" class="img-fluid"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-light mt-3" id="textCard">“We are impressed by the AI and think
+                                <h5 class="card-title mt-3" id="textCard">“We are impressed by the AI and think
                                     it's the best
                                     choice on the
                                     market.”</h5>
                                 <div class="author d-flex flex-column gap-2">
                                     <img src="Images/sonymusic_author.webp" width="80" class="img-fluid" alt="...">
 
-                                    <span class="fw-light" id="textCard">Emil Barsø Rheinlænder</span>
-                                    <span class="fw-light" id="textCard">Content & Marketing Coordinator</span>
+                                    <span id="name">Emil Barsø Rheinlænder</span>
+                                    <span id="work">Content & Marketing Coordinator</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-lg-4 col-md-4">
-                        <div class="card p-4" id="sixthContainerCard2">
+                        <div class="card p-4" id="sixthContainerCard">
                             <img src="Images/phoenix-trading-company-logo.webp" id="companyLogo" width="180"
                                 class="img-fluid" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-light mt-3" id="textCard">“remove.bg is leaps and bounds ahead
+                                <h5 class="card-title" id="textCard">“remove.bg is leaps and bounds ahead
                                     of the
                                     competition. A thousand times better. It simplified the whole process.”</h5>
                                 <div class="author d-flex flex-column gap-2">
                                     <img src="Images/phoenix_author.webp" width="80" class="img-fluid" alt="...">
 
-                                    <span class="fw-light" id="textCard">Marc Cohen</span>
-                                    <span class="fw-light" id="textCard">CEO</span>
+                                    <span id="name">Marc Cohen</span>
+                                    <span id="work">CEO</span>
                                 </div>
                             </div>
                         </div>
@@ -315,14 +320,14 @@
                             <img src="Images/techcrunch-logo.svg" id="companyLogo" width="220" class="img-fluid"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-light mt-3" id="textCard">“We were impressed by its ability to
+                                <h5 class="card-title   mt-3" id="textCard">“We were impressed by its ability to
                                     account for
                                     pesky, feathery hair without making an image look jagged and amateurish.”</h5>
                                 <div class="author d-flex flex-column gap-2">
                                     <img src="Images/techcrunch_author.webp" width="80" class="img-fluid" alt="...">
 
-                                    <span class="fw-light" id="textCard">Taylor Hatmaker</span>
-                                    <span class="fw-light" id="textCard">Senior Technology Editor</span>
+                                    <span id="name">Taylor Hatmaker</span>
+                                    <span id="work">Senior Technology Editor</span>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +338,7 @@
 
         </div>
         <div class="text-center d-flex justify-content-center align-items-center mt-5">
-            <p class="fs-4 fw-lighter">Read Success Stories <i class="fa-solid fa-arrow-right"></i></p>
+            <p id="readText">Read Success Stories <i class="fa-solid fa-arrow-right"></i></p>
         </div>
     </div>
     <div class="eightContainer container">
@@ -344,11 +349,11 @@
                 </div>
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                     <div class="titleBtn d-flex justify-content-center align-items-center gap-5 mt-3">
-                        <button type="button" class="btn btn-light">People</button>
-                        <button type="button" class="btn btn-light">Product</button>
-                        <button type="button" class="btn btn-light">Animals</button>
-                        <button type="button" class="btn btn-light">Cars</button>
-                        <button type="button" class="btn btn-light">Graphics</button>
+                        <button type="button" class="btn btn-light" id = "eightBtn">People</button>
+                        <button type="button" class="btn btn-light" id = "eightBtn">Product</button>
+                        <button type="button" class="btn btn-light" id = "eightBtn">Animals</button>
+                        <button type="button" class="btn btn-light" id = "eightBtn">Cars</button>
+                        <button type="button" class="btn btn-light" id = "eightBtn">Graphics</button>
                     </div>
                 </div>
             </div>
@@ -356,25 +361,25 @@
                 <div class="col-12 col-sm-12 col-lg-3 col-md-3">
                     <div class="eightContainerImg d-flex justify-content-center align-items-center flex-column mt-3">
                         <img src="Images/person-1.webp" class="img-fluid rounded" width="300" alt="" srcset="">
-                        <p class="fw-light text-center mt-2">Original</p>
+                        <p class="text-center mt-2" id="Original">Original</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-3 col-md-3">
                     <div class="eightContainerImg d-flex justify-content-center align-items-center flex-column mt-3">
                         <img src="Images/person-2.webp" class="img-fluid rounded" width="300" alt="" srcset="">
-                        <p class="fw-light text-center mt-2">Transparent background</p>
+                        <p class="text-center mt-2" id="transBg">Transparent background</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-3 col-md-3">
                     <div class="eightContainerImg d-flex justify-content-center align-items-center flex-column mt-3">
                         <img src="Images/person-3.webp" class="img-fluid rounded" width="300" alt="" srcset="">
-                        <p class="fw-light text-center mt-2">New background</p>
+                        <p class="text-center mt-2" id="newBg">New background</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-3 col-md-3">
                     <div class="eightContainerImg d-flex justify-content-center align-items-center flex-column mt-3">
                         <img src="Images/person-4.webp" class="img-fluid rounded" width="300" alt="" srcset="">
-                        <p class="fw-light text-center mt-2">Endless possibilities</p>
+                        <p class="text-center mt-2" id="end">Endless possibilities</p>
                     </div>
                 </div>
             </div>
@@ -384,19 +389,19 @@
         <div class="row d-flex justify-content-center align-items-center text-center">
             <div class="col-12 col-sm-12 col-lg-12 col-md-12">
                 <h1 class="fw-bolder mt-2 remove">Remove Image Background</h1>
-                <p class="fw-light fs-6 mt-3">Get a transparent background for any image.</p>
+                <p class="mt-3" id="get">Get a transparent background for any image.</p>
             </div>
             <div class="col-12 col-sm-12 col-lg-4 col-md-8 mt-3">
                 <div class="card shadow mb-5 bg-body" id="nineContainerCard">
                     <button type="button" class="btn btn-primary" id="upload">Upload Image</button>
                     <div class="text-center mt-2">
-                        <p class="fw-light fs-3">or drop a file,</p>
-                        <p class="fw-light" id="urlText">paste image or <span class="border-bottom">URL</span>​</p>
+                        <p id="dropfileText">or drop a file,</p>
+                        <p id="urlText">paste image or <span class="border-bottom">URL</span>​</p>
                     </div>
                 </div>
                 <div class="nineContainertryImges mt-5">
                     <div class="d-flex justify-content-center align-items-center" id="nineContainertextImg">
-                        <p class="text-nowrap fw-normal">No image? <br>
+                        <p class="text-nowrap noImg">No image? <br>
                             Try one of these:</p>
                         <div class="images d-flex justify-content-center align-items-center gap-2">
                             <img src="Images/1.webp" class="card-img img-fluid" id="imagesCard" alt="...">
@@ -437,8 +442,8 @@
                 <div class="col-12 col-sm-12 col-lg-4 col-md-4">
                     <div class="card p-4 rounded-5" id="detailsCard">
                         <div class="card-body">
-                            <p class="card-title">Oct 02,2025</p>
-                            <p class="card-text fw-light">How to remove people (or objects) from photos</p>
+                            <p class="card-title" id="date">Oct 02,2025</p>
+                            <p id="blogCardText">How to remove people (or objects) from photos</p>
 
                         </div>
                     </div>
@@ -446,8 +451,8 @@
                 <div class="col-12 col-sm-12 col-lg-4 col-md-4">
                     <div class="card p-3 rounded-5" id="detailsCard">
                         <div class="card-body">
-                            <p class="card-title">Sep 17, 2025</p>
-                            <p class="card-text fw-light">Why AI-generated backgrounds are the future of product
+                            <p class="card-title" id="date">Sep 17, 2025</p>
+                            <p id="blogCardText">Why AI-generated backgrounds are the future of product
                                 photography</p>
 
                         </div>
@@ -456,8 +461,8 @@
                 <div class="col-12 col-sm-12 col-lg-4 col-md-4">
                     <div class="card p-4 rounded-5" id="detailsCard">
                         <div class="card-body">
-                            <p class="card-title">Sep 15, 2025</p>
-                            <p class="card-text fw-light">Fresh design, advanced features: What’s new on remove.bg</p>
+                            <p class="card-title" id="date">Sep 15, 2025</p>
+                            <p id="blogCardText">Fresh design, advanced features: What’s new on remove.bg</p>
 
                         </div>
                     </div>
@@ -465,8 +470,8 @@
             
             <div class="row align-items-center">
                 <div class="col-12 col-sm-12 col-lg-6 col-md-7 mt-5">
-                    <h2 class="fw-bolder update">Get Updates</h1>
-                        <p class="fw-light mt-4 text">Sign up for our mailing list to receive news and <br
+                    <h2 class="update">Get Updates</h1>
+                        <p class="text">Sign up for our mailing list to receive news and <br
                                 class="d-none d-md-block">
                             updates about remove.bg products and <br class="d-none d-md-block">services. You can
                             unsubscribe
@@ -478,7 +483,7 @@
                             aria-label="Enter your email">
                         <span class="input-group-text bg-primary text-white">Subscribe</span>
                     </div>
-                    <p class="mt-2 fw-light">
+                    <p class="mt-2 Policy">
                         To learn more about how remove.bg handles your personal data, check our
                         <span class="border-bottom">Privacy Policy.</span>
                     </p>
@@ -499,56 +504,55 @@
     <div class="twelveContainer container">
         <div class="row g-3">
             <div class="col-12 col-sm-12 col-lg-3 col-md-3">
-                <ul class="d-flex flex-column gap-3">
-                    <h5 class="fw-light">Learn more</h5>
-                    <li><a href="" class="fw-light text-secondary">All features</a></li>
-                    <li><a href="" class="fw-light text-secondary">Photographers</a></li>
-                    <li><a href="" class="fw-light text-secondary">Marketing</a></li>
-                    <li><a href="" class="fw-light text-secondary">Developers</a></li>
-                    <li><a href="" class="fw-light text-secondary">Ecommerce</a></li>
-                    <li><a href="" class="fw-light text-secondary">Media</a></li>
-                    <li><a href="" class="fw-light text-secondary">Car Dealerships</a></li>
-                    <li><a href="" class="fw-light text-secondary">Enterprise</a></li>
+                <ul class="d-flex flex-column gap-3" id="links">
+                    <h5>Learn more</h5>
+                    <li><a href="" class="text-secondary">All features</a></li>
+                    <li><a href="" class="text-secondary">Photographers</a></li>
+                    <li><a href="" class="text-secondary">Marketing</a></li>
+                    <li><a href="" class="text-secondary">Developers</a></li>
+                    <li><a href="" class="text-secondary">Ecommerce</a></li>
+                    <li><a href="" class="text-secondary">Media</a></li>
+                    <li><a href="" class="text-secondary">Car Dealerships</a></li>
+                    <li><a href="" class="text-secondary">Enterprise</a></li>
 
-                    <li><a href="" class="fw-light text-secondary">Success stories</a></li>
+                    <li><a href="" class="text-secondary">Success stories</a></li>
 
 
 
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-lg-3 col-md-3">
-                <ul class="d-flex flex-column gap-3">
+                <ul class="d-flex flex-column gap-3" id="links">
                     <h5 class="fw-light">Tools & API</h5>
-                    <li><a href="" class="fw-light text-secondary">API Documentation</a></li>
-                    <li><a href="" class="fw-light text-secondary">Integrations, tools & apps</a></li>
-                    <li><a href="" class="fw-light text-secondary">Photoshop Extension</a></li>
-                    <li><a href="" class="fw-light text-secondary">Windows / Mac / Linux</a></li>
-                    <li><a href="" class="fw-light text-secondary">Android App</a></li>
-                    <li><a href="" class="fw-light text-secondary">Design Templates</a></li>
+                    <li><a href="" class="text-secondary">API Documentation</a></li>
+                    <li><a href="" class="text-secondary">Integrations, tools & apps</a></li>
+                    <li><a href="" class="text-secondary">Photoshop Extension</a></li>
+                    <li><a href="" class="text-secondary">Windows / Mac / Linux</a></li>
+                    <li><a href="" class="text-secondary">Android App</a></li>
+                    <li><a href="" class="text-secondary">Design Templates</a></li>
 
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-lg-3 col-md-3">
-                <ul class="d-flex flex-column gap-3">
+                <ul class="d-flex flex-column gap-3" id="links">
                     <h5 class="fw-light">Support</h5>
-                    <li><a href="" class="fw-light text-secondary">Help & FAQs</a></li>
-                    <li><a href="" class="fw-light text-secondary">Contact us</a></li>
-                    <li><a href="" class="fw-light text-secondary">Refunds</a></li>
-                    <li><a href="" class="fw-light text-secondary">Platform Status</a></li>
-                    <li><a href="" class="fw-light text-secondary">Resources</a></li>
+                    <li><a href="" class="text-secondary">Contact us</a></li>
+                    <li><a href="" class="text-secondary">Refunds</a></li>
+                    <li><a href="" class="text-secondary">Platform Status</a></li>
+                    <li><a href="" class="text-secondary">Resources</a></li>
 
                 </ul>
             </div>
             <div class="col-12 col-sm-12 col-lg-3 col-md-3">
-                <ul class="d-flex flex-column gap-3">
+                <ul class="d-flex flex-column gap-3" id="links">
                     <h5 class="fw-light">Company</h5>
-                    <li><a href="" class="fw-light text-secondary">Blog</a></li>
-                    <li><a href="" class="fw-light text-secondary">Affiliate Program</a></li>
-                    <li><a href="" class="fw-light text-secondary">Create automatic designs</a></li>
-                    <li><a href="" class="fw-light text-secondary">Video Background Removal</a></li>
-                    <li><a href="" class="fw-light text-secondary">Careers</a></li>
-                    <li><a href="" class="fw-light text-secondary">About us</a></li>
-                    <li><a href="" class="fw-light text-secondary">Press & Partnerships</a></li>
+                    <li><a href="" class="text-secondary">Blog</a></li>
+                    <li><a href="" class="text-secondary">Affiliate Program</a></li>
+                    <li><a href="" class="text-secondary">Create automatic designs</a></li>
+                    <li><a href="" class="text-secondary">Video Background Removal</a></li>
+                    <li><a href="" class="text-secondary">Careers</a></li>
+                    <li><a href="" class="text-secondary">About us</a></li>
+                    <li><a href="" class="text-secondary">Press & Partnerships</a></li>
 
                 </ul>
             </div>
