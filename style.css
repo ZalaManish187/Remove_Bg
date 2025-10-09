@@ -57,6 +57,14 @@ body {
     font-family: "Canva Sans", sans-serif;
 
 }
+#nav-link:hover{
+    background-color:aliceblue;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
 
 nav {
 
@@ -88,27 +96,31 @@ nav {
 #dropfileText {
     color: #536270;
 }
-.noImg{
-    color:rgb(84,97,108);
-    font-weight:600;
+
+.noImg {
+    color: rgb(84, 97, 108);
+    font-weight: 600;
     line-height: 24px;
     font-size: 16px;
     font-style: normal;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
 }
-#secondBtn{
+
+#secondBtn {
     font-weight: 500;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-size: 16px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     line-height: 24px;
 
 }
-.line2 img{
-    animation : line2 2s linear;
+
+.line2 img {
+    animation: line2 2s linear;
 }
+
 @keyframes line2 {
-    from{
+    from {
         transform: rotate(20deg);
     }
 
@@ -124,8 +136,9 @@ nav {
     animation: line 2s linear;
 
 }
+
 @keyframes line {
-    from{
+    from {
         transform: rotate(20deg);
     }
 
@@ -135,23 +148,24 @@ nav {
     gap: 30px;
 }
 
- .policyText {
-        text-align: center;
-        font-size: 11px;
-        line-height: 16px;
-        color:rgb(84,97,108);
-        font-weight: 400;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+.policyText {
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(84, 97, 108);
+    font-weight: 400;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
 
-        
+
 }
-.nineContainerpolicyText{
-     text-align: center;
-        font-size: 11px;
-        line-height: 16px;
-        color:rgb(84,97,108);
-        font-weight: 400;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+
+.nineContainerpolicyText {
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(84, 97, 108);
+    font-weight: 400;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
 }
 
 
@@ -200,16 +214,18 @@ nav {
 .thirdTextsecond {
     font-size: 15px;
 }
-#textCard{
+
+#textCard {
     font-size: 20px;
     line-height: 28px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     font-family: "Canva Sans", "Open Sans", sans-serif;
     font-weight: 600;
 }
-.name{
+
+.name {
     font-size: 16px;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
     line-height: 24px;
     font-weight: 600;
     font-family: "Canva Sans", "Open Sans", sans-serif;
@@ -317,18 +333,19 @@ nav {
     border-radius: 25px;
 }
 
-#work{
+#work {
     font-size: 14px;
     font-weight: 100;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
     line-height: 24px;
     font-family: "Canva Sans", "Open Sans", sans-serif;
 
 
 }
-#readText{
+
+#readText {
     font-size: 20px;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
     line-height: 28px;
     font-weight: 600;
     font-family: "Canva Sans", "Open Sans", sans-serif;
@@ -382,14 +399,15 @@ nav {
     font-size: 13px;
 }
 
-.titleTextH1{
-    color:#454545;
+.titleTextH1 {
+    color: #454545;
     font-weight: 600;
     font-size: 48px;
     line-height: 64px;
 }
-.thirdTextsecond{
-    color:rgb(10,10,10);
+
+.thirdTextsecond {
+    color: rgb(10, 10, 10);
     font-size: 16px;
     line-height: 24px;
     font-weight: 100;
@@ -397,18 +415,20 @@ nav {
     font-family: "Canva Sans", "Open Sans", sans-serif;
 
 }
-.thirdTextP{
+
+.thirdTextP {
     font-size: 32px;
     font-family: 'poppins' sans-serif;
     font-weight: bold;
-    font-style:normal;
+    font-style: normal;
     line-height: 42px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
 
 
 }
-#textDetails{
-   color:rgb(10,10,10);
+
+#textDetails {
+    color: rgb(10, 10, 10);
     font-size: 16px;
     line-height: 24px;
     font-weight: 100;
@@ -416,27 +436,30 @@ nav {
     font-family: "Canva Sans", "Open Sans", sans-serif;
 
 }
-#iText{
+
+#iText {
     font-family: "Canva Sans", "Open Sans", sans-serif;
 
     font-weight: 600;
     font-size: 17px;
     line-height: 28px;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
 }
-#sixthContainerH1{
+
+#sixthContainerH1 {
     font-size: 32px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     line-height: 42px;
     font-weight: 600;
 }
+
 #companyHeader {
     color: #454545;
     font-size: 48px;
     line-height: 64px;
     font-family: "Canva Sans", "Open Sans", sans-serif;
-font-weight: 600;
-color:rgb(69, 69, 69);
+    font-weight: 600;
+    color: rgb(69, 69, 69);
 
 
 }
@@ -457,31 +480,34 @@ color:rgb(69, 69, 69);
 }
 
 .update {
-       color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
 
     font-family: "Canva Sans", "Open Sans", sans-serif;
-font-size: 32px;
-line-height: 42px;
-font-weight: 600;
-font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    font-style: normal;
 
 
 }
-.text{
+
+.text {
     font-size: 16px;
     font-family: "Canva Sans", "Open Sans", sans-serif;
-       color:rgb(69, 69, 69);
-font-weight: 400;
-line-height: 24px;
+    color: rgb(69, 69, 69);
+    font-weight: 400;
+    line-height: 24px;
 }
-.Policy{
+
+.Policy {
     font-size: 11px;
     font-weight: 400;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
     font-family: "Canva Sans", "Open Sans", sans-serif;
 
 
 }
+
 #input {
     margin-top: 50px;
     position: relative;
@@ -508,30 +534,65 @@ line-height: 24px;
 
 .elevenContainer {
     margin-top: 100px;
-    
+
 
 }
 
 .twelveContainer {
     margin-top: 100px;
-   
+
 
 }
-#links{
- font-family: "Canva Sans", "Open Sans", sans-serif;
+
+#links {
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
 }
 
 #iconText {
     text-align: left;
 }
 
+#arrow {
+    transition: all 0.5s ease;
+
+
+}
+
+@keyframes arrowScale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 #cardContainer {
     width: 300px;
     border-radius: 20px;
+    transition: all 0.5s ease;
+
+
+}
+
+#cardContainer:hover {
+    border-color: aqua;
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+#cardContainer:hover #arrow {
+    animation: arrowScale 0.8s infinite ease-in-out;
+    border-color: aqua;
 }
 
 .nineContainer {
@@ -573,17 +634,17 @@ line-height: 24px;
 }
 
 
-#ftext{
-     font-size: 12px;
+#ftext {
+    font-size: 12px;
     line-height: 16px;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-weight: 400;
 }
 
 #footerText {
     font-size: 12px;
     line-height: 16px;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-weight: 400;
 
 }
@@ -605,9 +666,9 @@ ul li a {
     width: 100px;
     padding: 10px;
     font-size: 14px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     line-height: 20px;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
 
 
 }
@@ -619,44 +680,49 @@ ul li a {
     border: 0;
     outline: 0;
 }
-#eightBtn{
-     font-weight: 500;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+
+#eightBtn {
+    font-weight: 500;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-size: 16px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     line-height: 24px;
 }
-#Original ,
+
+#Original,
 #transBg,
 #newBg,
-#end{
+#end {
     font-size: 14px;
-    color:rgb(84,97,108);
+    color: rgb(84, 97, 108);
     font-weight: 400;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     line-height: 20px;
 }
-#get{
+
+#get {
     font-size: 16px;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-weight: 400;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     line-height: 24px;
 
 }
-#blogCardText{
-     font-family: "Canva Sans", "Open Sans", sans-serif;
+
+#blogCardText {
+    font-family: "Canva Sans", "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     line-height: 24px;
 
 }
-#date{
+
+#date {
     font-size: 16px;
-     font-family: "Canva Sans", "Open Sans", sans-serif;
-font-weight: 400;
-line-height: 24px;
+    font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
 
 }
 
@@ -665,14 +731,15 @@ line-height: 24px;
         width: 200px;
     }
 
-    #line{
-    
-    display: none;
+    #line {
 
-}
-.titleTextH1{
-    font-size: 35px;
-}
+        display: none;
+
+    }
+
+    .titleTextH1 {
+        font-size: 35px;
+    }
 
 
     #firstContainer {
@@ -729,7 +796,7 @@ line-height: 24px;
         text-align: center;
         font-size: 11px;
         line-height: 16px;
-        color:rgb(84,97,108);
+        color: rgb(84, 97, 108);
         font-weight: 400;
 
     }
@@ -862,23 +929,25 @@ line-height: 24px;
 
 
     }
-   .line img {
-    height: 250px;
-    position: absolute;
-    margin-left: 400px;
-    margin-top: 10px;
-    display: block;
 
-}
-#line{
-    display: block;
-}
-   
+    .line img {
+        height: 250px;
+        position: absolute;
+        margin-left: 400px;
+        margin-top: 10px;
+        display: block;
+
+    }
+
+    #line {
+        display: block;
+    }
+
 
     #headerCard {
         width: 100%;
         margin-top: 100px;
-    position: relative;
+        position: relative;
 
     }
 
@@ -1005,16 +1074,18 @@ line-height: 24px;
         justify-content: center;
         gap: 100px;
     }
-     .line img {
-    height: 200px;
-    position: absolute;
-    margin-left: 380px;
-    display: none;
 
-}
-#line{
-    display: block;
-}
+    .line img {
+        height: 200px;
+        position: absolute;
+        margin-left: 380px;
+        display: none;
+
+    }
+
+    #line {
+        display: block;
+    }
 
     #headerCard {
         width: 400px;
