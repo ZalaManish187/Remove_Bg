@@ -96,6 +96,17 @@ nav {
 #dropfileText {
     color: #536270;
 }
+#bgtransparent{
+    border-radius: 20px;
+
+}
+
+
+#secondContainerImg{
+    border-radius: 20px;
+    
+
+}
 
 .noImg {
     color: rgb(84, 97, 108);
@@ -753,6 +764,8 @@ ul li a {
 
     #secondContainerImg {
         margin-top: 50px;
+        width:100%;
+        height:100%;
     }
 
     #headerImgVideo {
@@ -929,6 +942,11 @@ ul li a {
 
 
     }
+    #secondContainerImg {
+        margin-top: 50px;
+        width:100%;
+        height:100%;
+    }
 
     .line img {
         height: 250px;
@@ -1064,7 +1082,11 @@ ul li a {
 
 
     }
-
+#secondContainerImg {
+        margin-top: 50px;
+        width:100%;
+        height:100%;
+    }
     .videoText {
         margin-left: 0px;
     }
@@ -1123,5 +1145,13 @@ ul li a {
 
     #footerLink {
         font-size: 10px;
+    }
+}
+
+@media (min-width:1080px) and (max-width:1920px) {
+    #secondContainerImg {
+        margin-top: 50px;
+        width:100%;
+        height:100%;
     }
 }
