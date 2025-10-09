@@ -572,12 +572,20 @@ line-height: 24px;
     height: 280px;
 }
 
-#footerLink {
-    font-size: 13px;
+
+#ftext{
+     font-size: 12px;
+    line-height: 16px;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
 #footerText {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 16px;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+    font-weight: 400;
+
 }
 
 ul {
@@ -594,8 +602,14 @@ ul li a {
 
 #languageBtn {
     border-radius: 20px;
-    width: 12 0px;
+    width: 100px;
     padding: 10px;
+    font-size: 14px;
+    color:rgb(69, 69, 69);
+    line-height: 20px;
+     font-family: "Canva Sans", "Open Sans", sans-serif;
+
+
 }
 
 #iconFooter button {
