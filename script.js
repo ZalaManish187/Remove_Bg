@@ -18,3 +18,24 @@ setInterval(() => {
     headerImgVideo.style.opacity = 1;
   }, 1000); 
 }, 10000); 
+
+
+
+var ImgBox = document.querySelector(".img-Box");
+var imgWrap = document.querySelector(".img-wrap");
+var originalImg = document.getElementById("originalImg");
+var linearrow = document.getElementById("linearrow");
+
+
+
+
+originalImg.style.width = ImgBox.offsetWidth + "px";
+
+var leftSpace = ImgBox.offsetLeft;
+
+ImgBox.onmousemove = function(e){
+    var boxwidth = (e.pageX - leftSpace) + "px";
+    imgWrap.style.width = boxwidth;
+    linearrow.style.left = boxwidth;
+}
+
