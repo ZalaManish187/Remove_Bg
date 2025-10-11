@@ -850,7 +850,25 @@ ul li a {
     }
      .img-Box{
         width:100%;
+    position:relative;
+
     }
+    #arrowImg{
+    width:40px;
+    position: absolute;
+    top:50%;
+    margin-left: -20px;
+    margin-top:50px;
+}
+#linearrow{
+    width:1px;
+    height:100px;
+    cursor:ew-resize;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+    top:0;
+}
    
 
     #headerImgVideo {
@@ -1034,6 +1052,8 @@ ul li a {
     }
      .img-Box{
         width:100%;
+        position: relative;
+
     }
     #line3{
         margin-left: 58vh;
@@ -1041,9 +1061,7 @@ ul li a {
         position: absolute;
         display: block;
     }
-    .img-Box{
-        position: relative;
-    }
+    
     #line4{
         display: block;
     }
@@ -1308,13 +1326,14 @@ ul li a {
         width:100%;
     }
      #line3{
-        margin-left: 105vh;
+        margin-left: 150vh;
         margin-top: 10px;
         position: absolute;
         display: block;
     }
     .img-Box{
         position: relative;
+        width:100%;
     }
    
 }
